@@ -7,10 +7,11 @@ class Journal extends Component {
         entries: []
     }
 
-    onEntryFormSubmit = (entry)=>{
+    onEntryFormSubmit = (entry,entryTitle)=>{
+        const {entries} = this.state;
         this.setState((state,props)=>{
-            return { entries: [...state.entries, entry]}
-        }) 
+            return { entries: [[entryTitle, entry], ...state.entries ]};
+        });        
     }
 
     render() {

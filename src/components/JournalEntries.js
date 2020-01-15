@@ -10,7 +10,10 @@ class JournalEntries extends Component {
                 <ul>
                 {entries.map(entry =>{
                     return (
-                        <li key = {entry}>{entry}</li>
+                        <li key = {entry[0]}>
+                            <h3>{entry[0]}</h3>
+                            <p>{entry[1]}</p>
+                        </li>
                     )
                 })}
                 </ul>
