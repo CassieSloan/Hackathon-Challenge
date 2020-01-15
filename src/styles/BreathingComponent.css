@@ -1,0 +1,41 @@
+.four-four {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(68, 180, 255);
+    border-radius: 100% ;
+    animation: four-four 16s infinite;
+}
+
+@keyframes four-four {
+    0%   { height: 200px; width: 200px;}
+    25%  {height: 400px; width: 400px;}
+    50%  {height: 400px; width: 400px;}
+    75% {height: 200px; width: 200px;}
+    100% {background-color:rgb(59, 62, 255); height: 200px; width: 200px;}
+}
+
+.seven-eleven {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(68, 255, 115);
+    border-radius: 100% ;
+    animation: seven-eleven 18s infinite;
+}
+
+@keyframes seven-eleven {
+    43.75% {height: 400px; width: 400px;}
+    100% {height: 200px; width: 200px;}
+}
+
+.four-seven {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 166, 233);
+    border-radius: 100% ;
+    animation: four-seven 11s infinite
+}
+
+@keyframes four-seven {
+    36.36% {height: 400px; width: 400px;}
+    100% {height: 200px; width: 200px;}
+}
