@@ -15,8 +15,6 @@ class App extends Component {
         return (
         <>
             <h1>This is our hackathon app!</h1>
-          </>
-            <>
                 <BrowserRouter>
                     <Route exact path="/" component={Homepage}/>
                     <Route exact path="/breathing" component={BreathingComponent} />
@@ -28,6 +26,9 @@ class App extends Component {
 
                     <Link to="/">Home</Link>
                     <Link to="/breathing">Breathing excercises</Link>
+                    <Link to="/world_facts_form">Random world facts</Link>
+                    <Link to="/relaxing_pictures">Images of nature</Link>
+
                 </BrowserRouter>
             </>
         )
