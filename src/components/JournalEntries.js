@@ -12,7 +12,8 @@ class JournalEntries extends Component {
                     return (
                         <li key = {entry[0]}>
                             <h3>{entry[0]}</h3>
-                            <p>{entry[1]}</p>
+                            <p>{entry[2]}</p>
+                            <h5>{entry[1]}</h5>
                         </li>
                     )
                 })}
