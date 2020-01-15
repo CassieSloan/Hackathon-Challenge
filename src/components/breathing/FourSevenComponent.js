@@ -10,8 +10,6 @@ class FourSeven extends Component {
                 <p>Breathe in for 4 seconds</p>
                 <p>Exhale for 7 seconds</p>
 
-                <button>start</button>
-
                 <div className="four-seven"></div>
             </>
         )
