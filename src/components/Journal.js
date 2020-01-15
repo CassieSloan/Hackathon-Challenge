@@ -7,11 +7,20 @@ class Journal extends Component {
         entries: []
     }
 
+    componentDidMount(){
+        if(localStorage.getItem("entries")){
+            const entries = JSON.parse(localStorage.getItem("entries"));
+            this.setState({entries : entries });
+        }
+    }
+
     onEntryFormSubmit = (entry,entryTitle)=>{
-        const {entries} = this.state;
         this.setState((state,props)=>{
             return { entries: [[entryTitle, entry], ...state.entries ]};
-        });        
+        }, ()=>{
+            localStorage.setItem("entries", JSON.stringify(this.state.entries));
+        });
+                
     }
 
     render() {
