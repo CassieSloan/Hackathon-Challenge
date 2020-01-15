@@ -13,10 +13,10 @@ class App extends Component {
     render() {
 
         return (
-        <>
+             <>
             <h1>This is our hackathon app!</h1>
-          </>
-            <>
+          
+            
                 <BrowserRouter>
                     <Route exact path="/" component={Homepage}/>
                     <Route exact path="/breathing" component={BreathingComponent} />
