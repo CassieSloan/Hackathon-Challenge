@@ -1,12 +1,10 @@
 import React , {Component} from "react";
 
 class EntryForm extends Component {
-    state = {entry: ""}
+    state = {entry: "", entryTitle: "Untitled"}
 
     onTextareaChange = (event)=>{
-        const {entry}= this.state;
         this.setState({entry:event.target.value});
-        console.log(entry);
     }
 
     onTextAreaSubmit = (event)=>{
